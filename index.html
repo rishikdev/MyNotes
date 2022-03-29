@@ -6,28 +6,41 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         
+        <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
+        <link rel="manifest" href="./images/site.webmanifest">
+        <link rel="mask-icon" href="./images/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+
         <title>My Notes</title>
 
         <style>
+          body
+          {
+            text-align: justify;
+            text-justify: inter-word;
+          }
+
           .carousel
           {
             margin-top: 5%;
             margin-bottom: 5%;
-            border-radius: 2%;
             background: #e0e0e0;
             box-shadow:  20px 20px 60px #bebebe,
                         -20px -20px 60px #ffffff;
           }
 
-          .carousel-caption
-          {
-            border-radius: 2%;
-            background: #444444;
-          }
-
           img
           {
-            max-width: 15rem;
+            max-width: 20rem;
+          }
+
+          .card
+          {
+            margin-top: 5%;
+            margin-bottom: 5%;
           }
 
         </style>
@@ -76,7 +89,7 @@
                   <div class="carousel-inner">
                     <div class="carousel-item active">
                       <img class="d-block w-50" src="https://github.com/rishikdev/Images/blob/main/My%20Notes%20Screenshots/iPhone%2011%20Pro/New%20Note%20Dark.png?raw=true" alt="New Note" style="margin: auto;">
-                      <div class="carousel-caption d-none d-md-block">
+                      <div class="carousel-caption bg-dark d-none d-md-block">
                         <h5>New Note</h5>
                         <p>Start creating notes as soon as you download My Notes!</p>
                       </div>
@@ -84,7 +97,7 @@
                     
                     <div class="carousel-item">
                       <img class="d-block w-50" src="https://github.com/rishikdev/Images/blob/main/My%20Notes%20Screenshots/iPhone%2011%20Pro/Filter%20Modal%20Dark.png?raw=true" alt="Homescreen" style="margin: auto;">
-                      <div class="carousel-caption d-none d-md-block">
+                      <div class="carousel-caption bg-dark d-none d-md-block">
                         <h5>Filter Notes</h5>
                         <p>Filter your notes on coloured tags for better organisation!</p>
                       </div>
@@ -92,7 +105,7 @@
                     
                     <div class="carousel-item">
                       <img class="d-block w-50" src="https://github.com/rishikdev/Images/blob/main/My%20Notes%20Screenshots/iPhone%2011%20Pro/Context%20Menu%20Dark.png?raw=true" alt="Context Menu" style="margin: auto;">
-                      <div class="carousel-caption d-none d-md-block">
+                      <div class="carousel-caption bg-dark d-none d-md-block">
                         <h5>Change Tags With Context Menu</h5>
                         <p>In a hurry? Quickly change the tags from the list itself!</p>
                       </div>
@@ -108,7 +121,23 @@
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="sr-only">Next</span>
                   </a>
-                </div>           
+                </div>  
+                
+                <div class="card text-white bg-dark">
+                  <div class="card-header">My Notes</div>
+                  <div class="card-body">
+                    <h5 class="card-title">What You Get</h5>
+                    <p class="card-text">After downloading this application you can expect total privacy of you data. We are striving to add new functionalities to this application such as biometric authentication 
+                      on eligible devices, the ability to pin notes so your most important notes remain at the top, and many more.
+                    </p>
+                    <hr>
+                    <h5 class="card-title">What You Pay</h5>
+                    <p class="card-text">This is the best part! You pay NOTHING! My Notes is a completely free application, and yes, all the updates in the future are also going to be free. You will not be pestered by 
+                      any annoying ads either as showing any ads might compromise your data.
+                    </p>
+                  </div>
+                  </div>
+                </div>
   
               </div>
               
