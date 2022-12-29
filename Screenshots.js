@@ -8,24 +8,18 @@ $(document).ready(function ()
 });
 
 var image_element = "";
+var css_style = "";
+var viewport_height = window.innerHeight;
+var viewport_width = window.innerWidth;
 
 function populate_images()
 {
     var i = 0, j = 0;
-    var css_style = "";
-
-    if(is_mobile_device())
-    {
-        css_style = "style=\"min-width : 80%\"";
-    }
-
-    else
-    {
-        css_style = "style=\"max-width : 20rem\"";
-    }
 
     for(i = 0; i < data_light.length; i = i + 1)
     {
+        set_css_style();
+
         if(!is_mobile_device() && data_light[i].device == "iPad")
         {
             css_style = "style=\"max-width : 40%\"";
@@ -63,5 +57,18 @@ function populate_images()
 
 function is_mobile_device()
 {
-    return window.innerHeight > window.innerWidth;
+    return viewport_height > viewport_width;
+}
+
+function set_css_style()
+{
+    if(is_mobile_device())
+    {
+        css_style = "style=\"min-width : 80%\"";
+    }
+
+    else
+    {
+        css_style = "style=\"max-width : 20%; margin : 5%\"";
+    }
 }
